@@ -1,0 +1,23 @@
+---
+title: Compute Critical Value
+name: Critical
+version: 0.0.3
+jms: '1.0'
+authors:
+  - Andreas M. Brandmaier
+maintainer: Andreas M. Brandmaier <andreas@brandmaier.de>
+date: '2021-09-03'
+type: R
+description: >-
+  This packages computes critical values for common distribution. This package
+  is meant as a complement for teaching introductory statistics courses.
+analyses:
+  - title: Standard Normal
+    name: quantile
+    ns: Critical
+    menuGroup: Critical
+    menuTitle: Standard Normal
+usesNative: true
+minApp: 1.0.8
+
+...

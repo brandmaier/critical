@@ -1,0 +1,17 @@
+---
+name:  quantile
+title: Critical Value
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Critical Value
+      type:  Preformatted
+
+    - name: plot
+      title: Density
+      type: Image
+      width:  400
+      height: 300
+      renderFun: .plot
+...

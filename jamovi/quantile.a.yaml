@@ -1,0 +1,31 @@
+---
+name:  quantile
+title: Standard Normal
+menuGroup: Critical
+version: '1.0.0'
+jas: '1.2'
+
+options:
+#    - name: prw
+#      format: number
+#      type: TextBox
+    
+    - name: group
+      title: Type of test
+      type: List
+      options:
+        - title: Two-sided
+          name: Two-sided
+        - title: One-sided
+          name: One-sided
+
+#    - name: withPlot
+#      title: Plot PDF
+#      type: Bool
+#      default: true
+      
+    - name: p
+      title: Confidence
+      type: Number
+      default: 0.95
+...
