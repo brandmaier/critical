@@ -1,0 +1,21 @@
+---
+name:  fdist
+title: F
+menuGroup: Critical
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: p
+      title: Confidence
+      type: Number
+      default: 0.95
+    - name: df1
+      title: Df (Numerator)
+      type: Number
+      default: 2
+    - name: df2
+      title: df (Denominator)
+      type: Number
+      default: 10
+...

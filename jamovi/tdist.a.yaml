@@ -1,0 +1,26 @@
+---
+name:  tdist
+title: Student's t
+menuGroup: Critical
+version: '1.0.0'
+jas: '1.2'
+
+
+options:
+    - name: p
+      title: Confidence
+      type: Number
+      default: 0.95
+    - name: df
+      title: Df
+      type: Number
+      default: 10
+    - name: group
+      title: Type of test
+      type: List
+      options:
+        - title: Two-sided
+          name: Two-sided
+        - title: One-sided
+          name: One-sided
+...

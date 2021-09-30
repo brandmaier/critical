@@ -1,7 +1,7 @@
 ---
 title: Compute Critical Value
 name: Critical
-version: 0.0.3
+version: 0.0.5
 jms: '1.0'
 authors:
   - Andreas M. Brandmaier
@@ -17,6 +17,16 @@ analyses:
     ns: Critical
     menuGroup: Critical
     menuTitle: Standard Normal
+  - title: Student's t
+    name: tdist
+    ns: Critical
+    menuGroup: Critical
+    menuTitle: Student's t
+  - title: F
+    name: fdist
+    ns: Critical
+    menuGroup: Critical
+    menuTitle: F
 usesNative: true
 minApp: 1.0.8
 

@@ -1,23 +1,24 @@
 
 # This file is a generated template, your changes will not be overwritten
 
-quantileClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
-    "quantileClass",
-    inherit = quantileBase,
+tdistClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
+    "tdistClass",
+    inherit = tdistBase,
     private = list(
         .run = function() {
 
+            
             two_sided <- as.logical(self$options$group=="Two-sided") 
             
             p <- self$options$p
             
-
-  
+            df <- 3
+            
             if (two_sided) {
                 p <- 1-((1-p)/2)
             }
             
-            q = qnorm(as.numeric(p))
+            q = qt(as.numeric(p),df = df)
             
             print("")
             # `self$data` contains the data
@@ -26,12 +27,12 @@ quantileClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             self$results$text$setContent( 
                 paste0("The critical value is ",round(q,2), " ",
                        ifelse(two_sided,"(two-sided)","(one-sided)"))
-                )
+            )
             
-            # self$results$
         },
         .plot=function(image, ...) {
             p <- as.numeric(self$options$p)
+            df <- as.numeric(self$options$df)
             
             two_sided <- as.logical(self$options$group=="Two-sided") 
             
@@ -39,18 +40,21 @@ quantileClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                 p <- 1-((1-p)/2)
             }
             
-           # p <- 0.95
-        #    two_sided <- TRUE
-            #print(two_sided)
+           
             
-            qleft <- qnorm(p,mean=0)
-            qright <- qnorm(1-p,mean=0)
-    
-            plot <- densityPlot(p, two_sided, qleft, qright)        
-    
+            qleft <- qt(p, df = df)
+            qright <- qt(1-p, df = df)
+            
+            maxx <- max(qleft*1.2,
+                        qt(0.99,df=df))
+            
+            plot <- densityPlot(p, two_sided=FALSE, 
+                                qleft, qright,density=
+                                    function(x){dt(x,df)},
+                                xminmax=c(-maxx,maxx))        
+            
             print(plot)
             TRUE    
         }
-        
         )
 )
