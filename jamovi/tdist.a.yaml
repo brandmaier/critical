@@ -1,6 +1,6 @@
 ---
 name:  tdist
-title: Student's t
+title: Student's t distribution
 menuGroup: Critical
 version: '1.0.0'
 jas: '1.2'
