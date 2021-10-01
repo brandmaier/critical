@@ -15,7 +15,7 @@ options:
       type: Number
       default: 2
     - name: df2
-      title: df (Denominator)
+      title: Df (Denominator)
       type: Number
       default: 10
 ...

@@ -17,11 +17,11 @@ analyses:
     ns: Critical
     menuGroup: Critical
     menuTitle: Standard Normal
-  - title: Student's t
+  - title: Student's t distribution
     name: tdist
     ns: Critical
     menuGroup: Critical
-    menuTitle: Student's t
+    menuTitle: Student's t distribution
   - title: F
     name: fdist
     ns: Critical

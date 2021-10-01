@@ -49,7 +49,7 @@ quantileResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Critical Value")
+                title="Normal Distribution")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",

@@ -55,7 +55,7 @@ fdistResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="F")
+                title="F distribution")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",

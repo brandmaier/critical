@@ -90,7 +90,7 @@ tdistBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 requiresMissings = FALSE)
         }))
 
-#' Student's t
+#' Student's t distribution
 #'
 #' 
 #' @param p .
