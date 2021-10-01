@@ -4,5 +4,5 @@ This is a plugin for [jamovi](https://www.jamovi.org/). The plugin is meant for 
 
 # Example output:
 
-[!misc/screenshot-F.png](misc/screenshot-F.png)
-[!misc/screenshot-normal.png](misc/screenshot-normal.png)
+![misc/screenshot-F.png](misc/screenshot-F.png)
+![misc/screenshot-normal.png](misc/screenshot-normal.png)
