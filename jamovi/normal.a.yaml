@@ -1,6 +1,6 @@
 ---
-name:  quantile
-title: Standard Normal
+name:  normal
+title: Normal
 menuGroup: Critical
 version: '1.0.0'
 jas: '1.2'
@@ -28,5 +28,14 @@ options:
       title: Confidence
       type: Number
       default: 0.95
+      
+    - name: mean
+      title: Mean
+      type: Number
+      default: 10
+      
+    - name: sd
+      title: Standard deviation
+      type: Number
+      default: 5
 ...
-

@@ -48,7 +48,7 @@ tdistClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             maxx <- max(qleft*1.2,
                         qt(0.99,df=df))
             
-            plot <- densityPlot(p, two_sided=FALSE, 
+            plot <- densityPlot(p, two_sided=two_sided, 
                                 qleft, qright,density=
                                     function(x){dt(x,df)},
                                 xminmax=c(-maxx,maxx))        

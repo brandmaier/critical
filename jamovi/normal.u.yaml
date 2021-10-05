@@ -1,0 +1,29 @@
+title: Normal
+name: normal
+jus: '3.0'
+stage: 0
+compilerMode: aggressive
+children:
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: ComboBox
+        name: group
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: p
+        format: number
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: mean
+        format: number
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: TextBox
+        name: sd
+        format: number
