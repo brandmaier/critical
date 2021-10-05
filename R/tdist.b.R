@@ -11,8 +11,8 @@ tdistClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             two_sided <- as.logical(self$options$group=="Two-sided") 
             
             p <- self$options$p
-            
-            df <- 3
+            df <- as.numeric(self$options$df)
+
             
             if (two_sided) {
                 p <- 1-((1-p)/2)
